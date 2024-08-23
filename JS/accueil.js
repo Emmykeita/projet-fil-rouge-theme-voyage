@@ -18,50 +18,50 @@ var destinations = ['afrique','asie','oceanie','amerique-du-nord','amerique-du-s
 
 
 var videoA = {
-    titre : 'Afrique avec vibes voyages',
+    titre : 'Venez decouvrir Afrique avec vibes voyages',
     urlImage: './images/afrique1.jpg',
-    description : 'Mon voyage en Afrique mes experiences mon ressentis',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts.",
     date : 2024,
     ladestination:['afrique']
 };
 
 var videoB = {
-    titre : 'Afrique le nouvel eldorado ',
+    titre : "Venez decouvrir l'Afrique le nouvel eldorado ",
     urlImage: './images/afrique2.jpg',
-    description : 'Voyage en Afrique ? Bonne idées je vous explique tous',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts.",
     annee : 2023,
     ladestination:['afrique']
 };
 
 var videoC = {
-    titre : "L'europe une nouvelle facette ?",
+    titre : "L'europe une nouvelle facette avec vibes vibes ?",
     urlImage: './images/europe1.jpg',
-    description : 'description',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts",
     annee : 2024,
     ladestination:['europe']
 };
 
 var videoD = {
-    titre : 'Voyage en Europe',
+    titre : ' Venez decouvrir et Voyager en Europe',
     urlImage: './images/europe2.jpg',
-    description : 'description',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts.",
     annee : 2024,
     ladestination:['europe'],
 };
 
 
 var videoE = {
-    titre : 'Voyage en Asie',
+    titre : ' Venez decouvrir et Voyager en Asie',
     urlImage: './images/asie1.jpg',
-    description : 'description',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts.",
     annee : 2024,
     ladestination:['asie'],
 };
 
 var videoF = {
-    titre : 'Voyage en Amerique-du-sud ',
+    titre : ' Venez Voyage en Amerique-du-sud ',
     urlImage: './images/sud1.jpg',
-    description : 'description',
+    description : "Créez des souvenirs inoubliables en famille. Des plages paradisiaques aux parcs d'attractions, en passant par les sites historiques, il y en a pour tous les goûts.",
     annee : 2024,
     ladestination:['amerique-du-sud'],
 };
@@ -90,7 +90,7 @@ $(".btn-select").on('click',function(){
             elementHtml += '<img src="'+ videos[i]['urlImage'] + '" alt="Image de la destination">';
             elementHtml += '<h3 class="carte-titre">'+ videos[i]['titre'] + '</h3>';
             elementHtml += '<p class="description">'+ videos[i]['description'] + '</p>';
-            elementHtml += '<a href="" class="btn">Voir vidéo</a>';
+            elementHtml += 'a href="pageafrique.html">Voir vidéo</a>';
             elementHtml += '</div>';
             //on ajoute tous ce que je viens de construire dans produit
             $('.carte-container').append(elementHtml)
