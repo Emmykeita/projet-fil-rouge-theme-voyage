@@ -49,7 +49,6 @@ function inscrireUtilisateur(username, password) {
 }
 
 
-
 // Fonction de connexion
 function connecterUtilisateur(username, password) {
     const user = users.find(user => user.username === username && user.password === password);
@@ -57,7 +56,7 @@ function connecterUtilisateur(username, password) {
         currentUser = user;
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         afficherMessage('success', "Connexion réussie !");
-        window.location.href = 'pageprofil.html'; // Redirection
+        window.location.href = 'accueil.html'; // Redirection
     } else {
         afficherMessage('error', "Nom d'utilisateur ou mot de passe incorrect !");
     }
@@ -90,19 +89,19 @@ document.getElementById('inscription-form')?.addEventListener('submit', function
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-// Affiche ou masque le bouton de déconnexion
-const logoutBtn = document.getElementById('logout-btn');
-if (currentUser) {
-    logoutBtn.style.display = 'block';
-} else {
-    logoutBtn.style.display = 'none';
-}
+    // Affiche ou masque le bouton de déconnexion
+    const logoutBtn = document.getElementById('logout-btn');
+    if (currentUser) {
+        logoutBtn.style.display = 'block';
+    } else {
+        logoutBtn.style.display = 'none';
+    }
 
-logoutBtn?.addEventListener('click', function () {
-    console.log('déconnexion');
-    
-    deconnecterUtilisateur();
-});
+    logoutBtn?.addEventListener('click', function () {
+        console.log('déconnexion');
+
+        deconnecterUtilisateur();
+    });
 });
 
 
