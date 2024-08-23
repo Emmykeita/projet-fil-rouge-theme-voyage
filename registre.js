@@ -57,7 +57,7 @@ function connecterUtilisateur(username, password) {
         currentUser = user;
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         afficherMessage('success', "Connexion réussie !");
-        window.location.href = 'pageprofil.html'; // Redirection
+        window.location.href = 'accueil.html'; // Redirection
     } else {
         afficherMessage('error', "Nom d'utilisateur ou mot de passe incorrect !");
     }
