@@ -5,7 +5,7 @@ const btnOuvrir = document.getElementById('btnFormulaireInscription');
 const formulaire = document.getElementById('inscription-form');
 btnOuvrir?.addEventListener('click', function () {
     formulaire.style.display = 'block';
-    btnOuvrir.style.display = 'none'; // Cache le bouton après avoir affiché le formulaire
+    btnOuvrir.style.display = 'none'; // Cache le bouton inscription
 });
 
 
