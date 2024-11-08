@@ -1,0 +1,242 @@
+/* HEADER NAV BAR */
+
+nav {
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #8AA6D0;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #F5951E;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+/* hero  class pour la banière*/
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.contenue {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-family: Abril Fatface,sans-serif;
+    font-size: 60px;
+    padding: 20px;
+
+    }
+
+.contenue h1 {
+    color: #fff;
+    font-size: 150px;
+}
+
+.contenue button {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 45px;
+    padding: 15px 45px;
+    font-size: 70px;
+    border-color: #EC4212;
+    font-family: Cabin, sans-serif;
+
+}
+
+.contenue button:hover {
+    background-color: #18005C;
+
+}
+
+/* Partie video */
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-gap: 18px; /* Espacement entre les vidéos */
+    padding: 20px 25px; /* Rembourrage intérieur */
+    background-color: #fff; /* Fond blanc */
+    overflow-y: auto; /* Défilement vertical */
+    height: calc(100vh - 116px); /* Hauteur dynamique */
+}
+
+.video-content-cover {
+    position: relative; /* Positionnement relatif pour le positionnement des enfants */
+    transition: transform 0.5s; /* Transition sur le transform */
+}
+
+.video-content {
+    margin-bottom: 25px; /* Marge inférieure */
+    position: relative; /* Positionnement relatif pour le positionnement des enfants */
+    transition: transform 0.5s; /* Transition pour effet de survol */
+    width: 100%; /* Largeur 100% */
+}
+
+.video-content:hover {
+    transform: scale(1.03); /* Agrandissement au survol */
+}
+
+.video-box {
+    width: auto; /* Largeur pleine */
+    height: 145px; /* Hauteur fixe */
+    display: block; /* Affichage en bloc */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Masque tout débordement */
+}
+
+.vvlogo {
+    min-width: 35px; /* Largeur minimale */
+    height: 35px; /* Hauteur fixe */
+    border-radius: 50%; /* Logo circulaire */
+    overflow: hidden; /* Masque tout débordement */
+}
+
+.video-details {
+    display: flex; /* Affichage flexible pour le logo et les détails */
+    color: #EC4212; /* Couleur du texte */
+    padding-top: 12px; /* Espacement au-dessus */
+}
+
+.detail {
+    margin-left: 12px; /* Espacement à gauche */
+}
+
+.title {
+    font-size: 1rem; /* Taille de police pour le titre */
+    font-weight: bold; /* Texte en gras */
+}
+
+.chanel-name {
+    font-size: 0.9rem; /* Taille de police pour le nom de la chaîne */
+    margin-top: 10px; /* Marge au-dessus */
+    color: #000; /* Couleur noire */
+}
+
+.views-upload {
+    display: flex; /* Affichage flexible pour les vues et l'upload */
+    font-size: 0.8rem; /* Taille de police */
+    color: #000; /* Couleur noire */
+}
+
+.upload {
+    margin-left: 5px; /* Marge à gauche */
+}
+
+
+
+/* FOOTER */
+
+footer {
+    font-family: "DM Sans", sans-serif;
+    background-color: #111;
+    width: 100vw;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+
+}
+
+.social a li {
+    font-size: 1.1rem;
+}
+
+.bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+
+}
+
+svg {
+    width: 40px;
+    cursor: pointer;
+
+}
+
+.bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
